@@ -1,0 +1,14 @@
+using System;
+
+namespace ToDoListAPI.Models.DTOs
+{
+    public class CreateUpdateTaskDto
+    {
+        [Required, (ErrorMessage = "Title required")]
+        [MaxLength(50, ErrorMessage = "Title cannot be more than 50 characters")]
+        public string Title {get;set}
+        public bool IsCompleted {get;set;} = false;
+        public DateTime? DueDate {get;set;}
+    }
+    
+}
