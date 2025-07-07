@@ -9,6 +9,10 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+//Automapper
+builder.Services.AddAutoMapper(typeof(MappingProfile));
+
+
 //EFCore
 builder.Services.AddDbContext<AppDbContext>(options =>{
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
