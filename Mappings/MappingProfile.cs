@@ -8,7 +8,7 @@ namespace ToDoListAPI.Mappings
     {
         public MappingProfile()
         {
-            CreateMap<TaskResponse, TaskDto>().ReverseMap();
+            CreateMap<TodoTask, TaskResponse>().ReverseMap();
             CreateMap<CreateUpdateTaskDto, TodoTask>();
         }
     }
