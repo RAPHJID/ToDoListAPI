@@ -1,6 +1,13 @@
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using AutoMapper;
+using Microsoft.EntityFrameworkCore;
+using ToDoListAPI.Data;
 using ToDoListAPI.Models;
 using ToDoListAPI.Models.DTOs;
 using ToDoListAPI.Service.IService;
+
+
 
 namespace ToDoListAPI.Service
 {
@@ -23,7 +30,8 @@ namespace ToDoListAPI.Service
 
         public async Task<TaskResponse> GetTaskByIdAsync(Guid taskId)
         {
-            var task = await _context.Tasks.FirstOrDefault(t => t.Id == taskId);
+            var task = await _context.Tasks.FirstOrDefaultAsync(t => t.Id == taskId);
+            var response = new ResponseDto();
             if(task == null) return null;
             return _mapper.Map<TaskResponse>(task);
         }

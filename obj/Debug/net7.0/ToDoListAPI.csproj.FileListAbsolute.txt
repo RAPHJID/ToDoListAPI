@@ -5,6 +5,8 @@ C:\Users\JID\Desktop\ToDoListAPI\bin\Debug\net7.0\ToDoListAPI.deps.json
 C:\Users\JID\Desktop\ToDoListAPI\bin\Debug\net7.0\ToDoListAPI.runtimeconfig.json
 C:\Users\JID\Desktop\ToDoListAPI\bin\Debug\net7.0\ToDoListAPI.dll
 C:\Users\JID\Desktop\ToDoListAPI\bin\Debug\net7.0\ToDoListAPI.pdb
+C:\Users\JID\Desktop\ToDoListAPI\bin\Debug\net7.0\AutoMapper.dll
+C:\Users\JID\Desktop\ToDoListAPI\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\JID\Desktop\ToDoListAPI\bin\Debug\net7.0\Azure.Core.dll
 C:\Users\JID\Desktop\ToDoListAPI\bin\Debug\net7.0\Azure.Identity.dll
 C:\Users\JID\Desktop\ToDoListAPI\bin\Debug\net7.0\Humanizer.dll

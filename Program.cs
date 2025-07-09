@@ -1,5 +1,10 @@
 using ToDoListAPI.Data;
 using Microsoft.EntityFrameworkCore;
+using ToDoListAPI.Mappings;
+using ToDoListAPI.Service;
+using ToDoListAPI.Service.IService;
+
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
